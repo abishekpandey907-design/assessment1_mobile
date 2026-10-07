@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RECIPELY"
+            android:textColor="#E60023"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="♡   ⌁   ☺"
+            android:textColor="#111827"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <!-- Search -->
+    <EditText
+        android:id="@+id/searchRecipesInput"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Search recipes..."
+        android:inputType="text"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#111827"
+        android:textColorHint="#9CA3AF" />
+
+    <!-- Tabs -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="For You"
+            android:textColor="#111827"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="28dp"
+            android:text="Today"
+            android:textColor="#6B7280"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Following"
+            android:textColor="#6B7280"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- Scrollable food grid -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <!-- Left food column -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="Fresh salad recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_salad" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Fresh salad&#10;Foodie • 2.4k"
+                    android:textColor="#4B5563"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:contentDescription="Sweet donut recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_donut" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Weekend donut&#10;Baker • 1.8k"
+                    android:textColor="#4B5563"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:contentDescription="Creamy pasta recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_pasta" />
+
+            </LinearLayout>
+
+            <!-- Right food column -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:contentDescription="Grilled steak recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_steak" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Herb steak&#10;Chef • 3.8k"
+                    android:textColor="#4B5563"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:contentDescription="Warm soup recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_soup" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="12dp"
+                    android:text="Tomato soup&#10;Home cook • 1.5k"
+                    android:textColor="#4B5563"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:contentDescription="Pasta recipe"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/food_pasta" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Bottom navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂&#10;Home"
+            android:textColor="#E60023"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌕&#10;Search"
+            android:textColor="#6B7280"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="+&#10;Post"
+            android:textColor="#6B7280"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="◯&#10;Messages"
+            android:textColor="#6B7280"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:layout_weight="1"
+            android:backgroundTint="#FFFFFF"
+            android:text="Profile"
+            android:textAllCaps="false"
+            android:textColor="#6B7280"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
